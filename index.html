@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" type="style.css" href="style.css">
+</head>
+<body>
+    <h1>User Management</h1>
+    <div class="container">
+        <div class="column">
+            <form id="add-user-form">
+                <h3>Add User Form</h3>
+                <!-- Form for adding a new user -->
+                 <label>Name: <input type="text"id="name" required></label>
+                    <label>Email: <input type="email" id="email" required></label>
+                    <label>Age: <input type="number" id="age" required></label>
+                    <button type="submit" name="submit">Add User</button>
+            </form>
+        </div>
+        <div class="column">
+            <form id="update-form">
+                <h3>Update Form</h3>
+                <!-- Form for updating a user -->
+                <label>ID of User to be Updated: <input type="text" id="id" required></label>
+                <label>New Name: <input type="text" id="name" required></label>
+                <label>New Email: <input type="email" id="email" required></label>
+                <label>New Age: <input type="number" id="age" required></label>
+                <button type="submit" name="submit">Update User</button>
+            </form>
+        </div>
+        <div class="column">
+            <form id="delete-form">
+                <h3>Delete Form</h3>
+                <!-- Form for deleting a user -->
+                <label>ID: <input type="text" id="id" required></label>
+                <button type="submit" name="submit">Delete User</button>
+            </form>
+    </div>
+    </div>
+    <br>
+    <table id="user-table" class="column-span">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="app.js"></script>
+  
+</body>
+</html>
